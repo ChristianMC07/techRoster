@@ -2,10 +2,10 @@ import { MongoClient, Db, Collection, FindCursor } from "mongodb";
 import { Technology } from "@/tools/data.model";
 
 // MongoDB constants
-console.log("MY_MONGO_URL:", process.env.MY_MONGO_URL);
+// console.log("MY_MONGO_URL:", process.env.MY_MONGO_URL);
 // const MONGO_URL:string = process.env.MONGO_URL!;
-// const MONGO_URL: string = process.env.MY_MONGO_URL || "mongodb://mongo:27017";
-const MONGO_URL: string = process.env.MY_MONGO_URL!;
+const MONGO_URL: string = process.env.MY_MONGO_URL || "mongodb://mongo:27017";
+// const MONGO_URL: string = process.env.MY_MONGO_URL!;
 const MONGO_DB_NAME: string = "dbTechs";
 const MONGO_COLLECTION_TECHS: string = "technologies";
 
